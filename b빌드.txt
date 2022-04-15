@@ -1,0 +1,46 @@
+frontend 테스트
+ 
+
+frontend 테스트를 위해 매번 npm run build 하는 것은 번거로운 일이다.
+
+ 
+
+frontend 작업중일때는 frontend를 npm run dev로 실행하고,
+
+ 
+
+backend는 npm start로 실행한다. (혹은 디버깅 모드(F5)로 실행한다.)
+
+ 
+
+ 
+
+frontend> npm run dev
+backend> npm run start (npm start 동일)
+ 
+
+ 
+
+그리고 localhost:8080으로 frontend에 접속하여 테스트한다.
+
+ 
+
+(npm run dev 실행 상태에서는 frontend 코드 수정시 수정된 내용이 자동 적용되어 편하다.)
+
+ 
+
+frontend 작업이 완료되면 npm run build를 실행하여 backend 프로젝트에 frontend를 적용한다.
+
+ 
+
+ 
+
+frontend> npm run build
+ 
+
+ 
+
+그리고 localhost:3000으로 backend에 접속하여 프로젝트를 최종 확인한다.
+
+
+======> 프론트에서 npm run build 후 / 백에서 npm start 하면 적용 됨
